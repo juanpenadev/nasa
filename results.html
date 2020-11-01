@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="results.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA images</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper navbar-fixed teal lighten-1">
+                <a class="btn-floating btn-large brand-logo hide-on-med-and-down" href="index.html"><i
+                        class="material-icons">home</i></a>
+
+                <a class="brand-logo hide-on-med-and-up" href="index.html">NASA images</a>
+
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                <form class="left hide-on-med-and-down" style="margin-left: 100px; width: 80%">
+                    <form action="results.html" method="get" class="input-field">
+                        <input type="text" name="search" id="search" placeholder="Search for a photo...">
+                    </form>
+                </form>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="info.html">Meet Team 7</a></li>
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="info.html">MEET THE TEAM 7</a></li>
+                <form action="results.html" method="get" class="input-field">
+                    <input type="text" name="search" id="search" placeholder="Search for a photo...">
+                </form>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- back to search button & back to main page button -->
+    <!-- small link to team members -->
+    <!-- grid layout image/ video search results -->
+    <!-- hover effect for each image/ video showing image information -->
+    <!-- user ability to share photos via social media & email -->
+
+    <div id="result-container" class="container"></div>
+
+    <script src="core.js"></script>
+</body>
+
+</html>
